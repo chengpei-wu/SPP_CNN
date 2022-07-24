@@ -9,6 +9,7 @@ from parameters import *
 from utils import *
 import os
 import warnings
+
 warnings.filterwarnings('ignore')
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = '3'  # Ignore warning
 
@@ -21,10 +22,10 @@ class CNN:
         self.optimizer = optimizers.SGD(learning_rate=1e-1)
         self.valid_proportion = valid_proportion
         if not model:
-            # initial instance for training
+            # initial model for training
             self.model = self.init_model()
         else:
-            # initial instance for testing
+            # initial model for testing
             spp_layer = {'SpatialPyramidPooling': SpatialPyramidPooling}
             self.model = load_model(model, custom_objects=spp_layer)
 

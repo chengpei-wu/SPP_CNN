@@ -4,15 +4,15 @@ from parameters import *
 
 # the model loading path
 model_load_path = f'./models/{training_network_scale}' \
-    f'_{attack_strategy}_isd{isd}_isw{isw}_{training_robustness}'
+                  f'_{attack_strategy}_isd{isd}_isw{isw}_{training_robustness}'
 
 # the testing data .mat file path
 testing_data_path = f'./data/test/{testing_network_scale}' \
-    f'_{attack_strategy}_isd{isd}_isw{isw}.mat'
+                    f'_{attack_strategy}_isd{isd}_isw{isw}.mat'
 
 # the prediction output file saving path
 prediction_saving_path = f'./prediction/{training_network_scale}' \
-    f'_{attack_strategy}_isd{isd}_isw{isw}_{training_robustness}_test{testing_network_scale}.mat'
+                         f'_{attack_strategy}_isd{isd}_isw{isw}_{training_robustness}_test{testing_network_scale}.mat'
 
 print(f'tesing infomation:\n\t'
       f'model: {model_load_path}\n\t'

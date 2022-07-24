@@ -1,6 +1,3 @@
-# pre-set parameters
-# network parameters
-
 # CNN parameters:
 # training network sizes
 training_network_scale = '(300,700)'
@@ -13,9 +10,9 @@ testing_network_scale = '(300,700)'
 
 
 # label generating algorithm：
-# ndeg: remove nodes by degree rank
+# ndeg: remove nodes by degree
 # nrnd: random remove nodes
-# nbet: remove nodes by betweeness centrality rank
+# nbet: remove nodes by betweeness centrality
 if training_robustness == 'lc':
     attack_strategy = 'ndeg'
 else:
@@ -27,5 +24,5 @@ isw = 0
 batch_size = 1
 epochs = 30
 
-# the valid set size
+# the valid set
 valid_proportion = 0.1

@@ -1,9 +1,6 @@
 import numpy as np
 import scipy.io as sio
 import tensorflow.keras.callbacks
-from sklearn.preprocessing import MinMaxScaler
-import networkx as nx
-from parameters import isd, isw
 
 
 class Save_loss(tensorflow.keras.callbacks.Callback):
@@ -27,7 +24,7 @@ def load_network(path, roubustness):
     for i in range(len_net):
         for j in range(len_instance):
             print('\r',
-                  f'loading { i * len_instance + j + 1} / {len_net * len_instance}  network...',
+                  f'loading {i * len_instance + j + 1} / {len_net * len_instance}  network...',
                   end='',
                   flush=True)
             A.append(networks[i, j]['adj'][0][0])
