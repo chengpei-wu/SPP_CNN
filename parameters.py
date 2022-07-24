@@ -1,12 +1,12 @@
 # CNN parameters:
 # training network sizes
-training_network_scale = '(300,700)'
+training_network_scale = 'r(300,700)'
 # training network attributes: isd: directed network; isw: weighted network
-isd = 1
+isd = 0
 # training labels: yc: controllability robutness; lc: connectivity robustness
 training_robustness = 'yc'
 # testing network sizes
-testing_network_scale = '(300,700)'
+testing_network_scale = 'r(300,700)'
 
 
 # label generating algorithm：

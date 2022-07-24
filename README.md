@@ -30,13 +30,13 @@
 
 - Demo dataset explanation
 
-  - The demo dataset is a mat file of 9000 networks, which includes 9 topologies, and 1000 network instances for each topology. 
+  - The demo dataset is a mat file of 1000 networks form MULTI-REDDIT-12K.
 
   - The training label is the controllability robustness under random node-removal attacks. 
 
   - Network sizes are randomly distributed between 300-700.
 
-  - All networks are directed and unweighted.
+  - All networks are undirected and unweighted.
 
 ## Cite
 
