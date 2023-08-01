@@ -27,7 +27,7 @@ To make it easier for your dataset to be used directly in the code, it is recomm
 
 ### Train & Test
 
-```
+```python
 python train.py # Train model
 python test.py # Test model using the prepared trained model
 ```
