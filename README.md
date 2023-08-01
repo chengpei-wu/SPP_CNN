@@ -43,3 +43,31 @@
 Please cite our paper if you use this code in your research work.
 
 - [ ] Citation information of our paper will be updated soon.
+
+
+
+# Usage
+
+To make it easier for your dataset to be used directly in the code, it is recommended to keep the training data format
+the same as in this code. Otherwise, you will need to modify the code in the data loading part to suit your own dataset.
+
+## install
+
+` conda install --yes --file requirements.txt`
+
+## train
+
+`python train.py`
+
+## test
+
+`python test.py`
+
+## dataset
+
+### 4(300,700)_nrnd_isd0_isw0.mat
+
+- 4 types of networks: {ER, QS, SF, SW-NW}, each type include 500 instances, totally 2000 instances.
+- For all networks, using random node removing attack (nrnd) to calculate the robustness.
+- All network sizes range from 300 to 700.
+- All networks are undirected(isd0) and unweighted(isw0).
